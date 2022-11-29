@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddComponent } from './add/add.component';
@@ -28,7 +28,7 @@ component:AddComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,RouterModule.forRoot(myRoute)
+    AppRoutingModule,RouterModule.forRoot(myRoute),HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
